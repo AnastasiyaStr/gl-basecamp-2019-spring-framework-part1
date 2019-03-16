@@ -7,7 +7,7 @@ import home.ua.service.NumberGenerator;
 
 import java.util.Random;
 
-@Component("NumberGenerator")
+//@Component("NumberGenerator")
 @Getter
 @Setter
 public class NumberGeneratorImpl implements NumberGenerator {

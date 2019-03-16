@@ -12,7 +12,7 @@ import home.ua.service.NumberGenerator;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component("Game")
+//@Component("Game")
 @Getter
 @Setter
 public class GameImpl implements Game {
