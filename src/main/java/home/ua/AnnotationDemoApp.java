@@ -19,7 +19,7 @@ public class AnnotationDemoApp {
         ConfigurableApplicationContext context
                 = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
-        NumberGenerator numberGenerator
+      /*  NumberGenerator numberGenerator
                 = context.getBean("NumberGenerator", NumberGenerator.class);
         int guess = numberGenerator.next();
         log.info("My guess = {}", guess);
@@ -31,6 +31,6 @@ public class AnnotationDemoApp {
         log.info("Result = {}", game.isGameWon() ? "Win" : "Lose");
 
         // close context
-        context.close();
+        context.close();*/
     }
 }

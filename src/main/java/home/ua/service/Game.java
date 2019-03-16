@@ -2,25 +2,13 @@ package home.ua.service;
 
 public interface Game {
 
-    int getNumber();
+   void reset();
 
-    int getGuess();
-
-    void setGuess(int guess);
-
-    int getSmallest();
-
-    int getBiggest();
-
-    int getRemainingGuesses();
-
-    void reset();
+    /*void setGuess(int guess);
 
     void check();
 
-    boolean isValidNumberRange();
-
     boolean isGameWon();
 
-    boolean isGameLost();
+    boolean isGameLost();*/
 }

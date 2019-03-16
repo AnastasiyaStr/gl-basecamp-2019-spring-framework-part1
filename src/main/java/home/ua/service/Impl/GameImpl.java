@@ -18,87 +18,85 @@ import java.util.Scanner;
 @Setter
 public class GameImpl implements Game {
     private static final Logger log = LoggerFactory.getLogger(GameImpl.class);
-
     private final NumberGenerator numberGenerator;
-
-
     private int guessCount = 10;
     private int number;
     private int guess;
-    private int smallest;
-    private int biggest;
+   // private int smallest=0;
+  //  private int biggest;
     private int remainingGuesses;
-    private boolean validNumberRange = true;
+  //  private boolean validNumberRange = true;
 
     //@Autowired
     public GameImpl(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
     }
-
-    @PostConstruct
     @Override
+    @PostConstruct
     public void reset() {
-
-            smallest = 0;
-            guess = 51;
+          //  smallest = 0;
+          //  guess = 51;
             remainingGuesses = guessCount;
-            biggest = numberGenerator.getMaxNumber();
+           // biggest = numberGenerator.getMaxNumber();
             number = numberGenerator.next();
-        while(true) {
 
+       // System.out.println("the number is {}" + number);
+      /*  while(true) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("ENterrrr:");
             guess=scanner.nextInt();
-            check();
+            check(guess);
             System.out.println("the number is {}" + number);
-            if(isGameWon()){
+            if(isGameWon(guess)){
                 System.out.println("You won!!");break;}
-            if(guess!=number&&remainingGuesses<=0){
+            if(isGameLost(guess)){
                 System.out.println("You lost");break;}
                 remainingGuesses--;
-        }
+        }*/
     }
 
     @PreDestroy
     public void preDestroy() {
         log.info("in Game preDestroy()");
-        log.info("Result = {}", isGameWon() ? "Win" : "Lose");
+        //log.info("Result = {}", isGameWon(guess) ? "Win" : "Lose");
     }
 
 
-   @Override
-    public void check() {
 
-        checkValidNumberRange();
-
-        if(validNumberRange) {
+    public int check(int guess) {
+        if(checkValidNumberRange(guess)) {
             if(guess > number) {
-                System.out.println("Number is less!!!");
+               // System.out.println("Number is less!!!");
+                return 1;
             }
 
             if(guess < number) {
-                System.out.println("Number is bigger!!!");
+                //System.out.println("Number is bigger!!!");
+                return -1;
             }
+        }else{
+           // System.out.println("Your number should be within range!!!");
+            return 0;
         }
-
         remainingGuesses--;
+        return 2;
     }
 
 
 
-    @Override
-    public boolean isGameWon() {
+
+    public boolean isGameWon(int guess) {
         return guess == number;
     }
 
-    @Override
-    public boolean isGameLost() {
-        return !isGameWon() && remainingGuesses <= 0;
+
+    public boolean isGameLost(int guess) {
+        return guess!=number&&remainingGuesses<=0;
     }
 
 
-    private void checkValidNumberRange() {
-        validNumberRange = (guess >= smallest) && (guess <= biggest);
+    private boolean checkValidNumberRange(int guess) {
+       return (guess >= numberGenerator.getMinNumber()) && (guess <= numberGenerator.getMaxNumber());
     }
 
 
