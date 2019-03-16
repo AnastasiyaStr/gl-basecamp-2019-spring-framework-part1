@@ -18,16 +18,15 @@ public class JavaConfigDemoApp {
         AnnotationConfigApplicationContext context
                 = new AnnotationConfigApplicationContext(GuessConfig.class);
 
-        NumberGenerator numberGenerator
-                = context.getBean("numberGenerator", NumberGenerator.class);
-        int guess = numberGenerator.next();
-        log.info("My guess = {}", guess);
+    //    NumberGenerator numberGenerator = context.getBean("numberGenerator", NumberGenerator.class);
+     /*   int guess = numberGenerator.next();
+        log.info("My guess = {}", guess);*/
 
         // get bean
-        Game game = context.getBean("game",Game.class);
-        game.setGuess(guess);
+     //   Game game = context.getBean("game",Game.class);
+     /*   game.setGuess(guess);*/
 
-        log.info("Result = {}", game.isGameWon() ? "Win" : "Lose");
+
 
         // close context
         context.close();

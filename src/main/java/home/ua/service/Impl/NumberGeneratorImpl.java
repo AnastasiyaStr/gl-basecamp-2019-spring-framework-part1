@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import home.ua.service.NumberGenerator;
 
 import java.util.Random;
+import java.util.Scanner;
 
 //@Component("NumberGenerator")
 @Getter
@@ -17,7 +18,10 @@ public class NumberGeneratorImpl implements NumberGenerator {
 
     @Override
     public int next() {
-        return random.nextInt(maxNumber);
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("ENterrrr:");
+        return 54;
+        //return  random.nextInt(maxNumber);
     }
 
     @Override

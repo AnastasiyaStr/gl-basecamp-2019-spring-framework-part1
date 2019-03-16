@@ -11,6 +11,7 @@ import home.ua.service.NumberGenerator;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.util.Scanner;
 
 //@Component("Game")
 @Getter
@@ -29,7 +30,7 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
-    @Autowired
+    //@Autowired
     public GameImpl(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
     }
@@ -37,71 +38,53 @@ public class GameImpl implements Game {
     @PostConstruct
     @Override
     public void reset() {
-        smallest = 0;
-        guess = 0;
-        remainingGuesses = guessCount;
-        biggest = numberGenerator.getMaxNumber();
-        number = numberGenerator.next();
-        log.debug("the number is {}", number);
+
+            smallest = 0;
+            guess = 51;
+            remainingGuesses = guessCount;
+            biggest = numberGenerator.getMaxNumber();
+            number = numberGenerator.next();
+        while(true) {
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("ENterrrr:");
+            guess=scanner.nextInt();
+            check();
+            System.out.println("the number is {}" + number);
+            if(isGameWon()){
+                System.out.println("You won!!");break;}
+            if(guess!=number&&remainingGuesses<=0){
+                System.out.println("You lost");break;}
+                remainingGuesses--;
+        }
     }
 
     @PreDestroy
     public void preDestroy() {
         log.info("in Game preDestroy()");
+        log.info("Result = {}", isGameWon() ? "Win" : "Lose");
     }
 
-    @Override
-    public int getNumber() {
-        return number;
-    }
 
-    @Override
-    public int getGuess() {
-        return guess;
-    }
-
-    @Override
-    public void setGuess(int guess) {
-        this.guess = guess;
-    }
-
-    @Override
-    public int getSmallest() {
-        return smallest;
-    }
-
-    @Override
-    public int getBiggest() {
-        return biggest;
-    }
-
-    @Override
-    public int getRemainingGuesses() {
-        return remainingGuesses;
-    }
-
-    @Override
+   @Override
     public void check() {
 
         checkValidNumberRange();
 
         if(validNumberRange) {
             if(guess > number) {
-                biggest = guess -1;
+                System.out.println("Number is less!!!");
             }
 
             if(guess < number) {
-                smallest = guess + 1;
+                System.out.println("Number is bigger!!!");
             }
         }
 
         remainingGuesses--;
     }
 
-    @Override
-    public boolean isValidNumberRange() {
-        return validNumberRange;
-    }
+
 
     @Override
     public boolean isGameWon() {
