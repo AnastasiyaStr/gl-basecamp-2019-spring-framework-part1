@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import home.ua.service.Game;
 import home.ua.service.NumberGenerator;
@@ -17,6 +18,8 @@ import java.util.Scanner;
 @Getter
 @Setter
 public class GameImpl implements Game {
+    @Value("${guess.name}")
+    private String name;
     private static final Logger log = LoggerFactory.getLogger(GameImpl.class);
     private final NumberGenerator numberGenerator;
     private int guessCount = 10;

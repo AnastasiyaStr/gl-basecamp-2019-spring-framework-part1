@@ -7,8 +7,10 @@ import home.ua.service.NumberGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
+@PropertySource(value = {"classpath:guess.properties"})
 //@ComponentScan("home.ua.service")
 public class GuessConfig {
 

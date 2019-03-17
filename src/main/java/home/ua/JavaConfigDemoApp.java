@@ -5,6 +5,7 @@ import home.ua.service.Impl.GameImpl;
 import home.ua.service.NumberGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,6 +13,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Scanner;
 
 public class JavaConfigDemoApp {
+
+
     private static final Logger log = LoggerFactory.getLogger(AnnotationDemoApp.class);
 
     private static final String CONFIG_LOCATION = "beans.xml";
@@ -29,6 +32,7 @@ public class JavaConfigDemoApp {
         GameImpl game = context.getBean("game", GameImpl.class);
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Hello, "+game.getName());
         System.out.println("Enter the number:");
         int guess = scanner.nextInt();
 
