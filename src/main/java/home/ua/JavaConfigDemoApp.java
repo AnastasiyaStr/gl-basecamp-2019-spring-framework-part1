@@ -13,20 +13,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Scanner;
 
 public class JavaConfigDemoApp {
-
-
-    private static final Logger log = LoggerFactory.getLogger(AnnotationDemoApp.class);
-
-    private static final String CONFIG_LOCATION = "beans.xml";
-
+    private static final Logger log = LoggerFactory.getLogger(JavaConfigDemoApp.class);
     public static void main(String[] args) {
 
         AnnotationConfigApplicationContext context
                 = new AnnotationConfigApplicationContext(GuessConfig.class);
-
-    //    NumberGenerator numberGenerator = context.getBean("numberGenerator", NumberGenerator.class);
-     /*   int guess = numberGenerator.next();
-        log.info("My guess = {}", guess);*/
 
         // get bean
         GameImpl game = context.getBean("game", GameImpl.class);
@@ -35,29 +26,35 @@ public class JavaConfigDemoApp {
         System.out.println("Hello, "+game.getName());
         System.out.println("Enter the number:");
         int guess = scanner.nextInt();
-
+        log.info("My guess = {}", guess);
         while(true) {
            int i =  game.check(guess);
            switch (i) {
                case -1:
-                   System.out.println("Number is bigger!!!");
+                   System.out.println("Number you want to guess is bigger!!!");
+                   log.info("Guesses left:{}", game.getRemainingGuesses());
                    break;
                case 1:
-                   System.out.println("Number is less!!!");
+                   System.out.println("Number you want to guess is less!!!");
+                   log.info("Guesses left:{}", game.getRemainingGuesses());
                    break;
                case 0:
                    System.out.println("Number should be withing range!!!");
+                   log.info("Guesses left:{}", game.getRemainingGuesses());
                    break;
            }
+
             if (game.isGameWon(guess)) {
                 System.out.println("You won!!");
                 break;
             }
             if (game.isGameLost(guess)) {
                 System.out.println("You lost");
+                log.info("Number:{}", game.getNumber());
                 break;
             }
            guess = scanner.nextInt();
+            log.info("My guess = {}", guess);
         }
         // close context
         context.close();

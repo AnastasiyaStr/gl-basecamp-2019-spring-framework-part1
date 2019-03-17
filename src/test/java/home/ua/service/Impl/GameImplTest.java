@@ -30,9 +30,15 @@ private  GameImpl game;
         assertTrue(game.isGameWon(14));
     }
 
+
     @Test
-    public void isGameLost() {
-        game.setRemainingGuesses(-1);
-        assertTrue(game.isGameLost(14));
+    public void isGameLostAfterGuesses() {
+        assertFalse(game.isGameLost(15));
+        game.setNumber(14);
+        for (int i = 0; i <game.getGuessCount() ; i++) {
+            game.check(15);
+        }
+      assertTrue(game.isGameLost(15));
     }
+
 }

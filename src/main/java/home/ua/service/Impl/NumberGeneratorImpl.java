@@ -1,26 +1,19 @@
 package home.ua.service.Impl;
-
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
 import home.ua.service.NumberGenerator;
-
+import org.springframework.beans.factory.annotation.Value;
 import java.util.Random;
-import java.util.Scanner;
-
-//@Component("NumberGenerator")
 @Getter
 @Setter
 public class NumberGeneratorImpl implements NumberGenerator {
-
     private final Random random = new Random();
-    private int maxNumber = 100;
-    private int minNumber = 0;
+    @Value("${guess.max}")
+    private int maxNumber;
+    @Value("${guess.min}")
+    private int minNumber;
     @Override
     public int next() {
-      /* Scanner scanner = new Scanner(System.in);
-        System.out.println("ENterrrr:");
-        return 54;*/
         return  random.nextInt(maxNumber);
     }
 
