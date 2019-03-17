@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8da8f52-1b8d-4021-8e64-2c4827926aed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/home/ua/AnnotationDemoApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/home/ua/GuessConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/home/ua/GuessConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/home/ua/JavaConfigDemoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/home/ua/JavaConfigDemoApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/home/ua/service/Impl/GameImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/home/ua/service/Impl/GameImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/home/ua/service/Impl/NumberGeneratorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/home/ua/service/Impl/NumberGeneratorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/guess.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/guess.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/home/ua/service/Impl/GameImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/home/ua/service/Impl/GameImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/home/ua/AnnotationDemoApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/home/ua/GuessConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/home/ua/GuessConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/home/ua/JavaConfigDemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/home/ua/JavaConfigDemoApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/NumberGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/NumberGeneratorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/guess.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guess.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/home/ua/service/Impl/GameImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/home/ua/service/Impl/GameImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e8da8f52-1b8d-4021-8e64-2c4827926aed" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -100,11 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -112,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/JavaConfigDemoApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -184,7 +166,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Impl/NumberGeneratorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="191">
               <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -587,16 +569,16 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/home/ua/service/NumberGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/home/ua/service/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/home/ua/AnnotationDemoApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/guess.properties" />
         <option value="$PROJECT_DIR$/src/main/java/home/ua/service/guess.properties" />
         <option value="$PROJECT_DIR$/src/main/java/home/ua/GuessConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/home/ua/service/Impl/GameImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/guess.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/NumberGeneratorImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/home/ua/JavaConfigDemoApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/home/ua/service/Game.java" />
       </list>
     </option>
   </component>
@@ -715,7 +697,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552812216065" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552812259206" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -806,7 +788,7 @@
       <updated>1552729854958</updated>
       <workItem from="1552729860380" duration="2219000" />
       <workItem from="1552750316505" duration="17367000" />
-      <workItem from="1552804552108" duration="6038000" />
+      <workItem from="1552804552108" duration="6398000" />
     </task>
     <servers />
   </component>
@@ -843,12 +825,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25624000" />
+    <option name="totallyTimeSpent" value="25984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -858,7 +841,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -983,34 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/NumberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/home/ua/service/Impl/GameImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,9 +980,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/JavaConfigDemoApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Impl/NumberGeneratorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="191">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1032,13 +1001,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/JavaConfigDemoApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/NumberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Impl/GameImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/home/ua/service/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
